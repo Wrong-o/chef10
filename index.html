@@ -1,50 +1,30 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewpost" content="width=device-width, initial-scale=1.0">
-    <title>Chef10 allergy manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef10 Allergy Manager</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-</html>
-<body>
-  <header>
-  <h1>Chef10 - Allergies</h1>
-  </header>
-  <div class="panel">
-    <div class="category">
-      <h3>Category 1</h3>
-      <ul>
-        <li><button onclick="showPopup('Category 1 - Item 1')">BBQ chicken</button> </li>
-        <li><button onclick="showPopup('Tonkatsu')">Tonkatsu</button> </li>
-        <li><button onclick="showPopup('Iberico')">Iberico</button> </li>
-      </ul>
-    </div>
-  </div>
-    <div class="category">
-      <h3>Category 2</h3>
-      <ul>
-        <li><button onclick="showPopup('Category 1 - Item 1')">BBQ chicken</button> </li>
-        <li><button onclick="showPopup('Tonkatsu')">Tonkatsu</button> </li>
-        <li><button onclick="showPopup('Iberico')">Iberico</button> </li>
-      </ul>
-    </div>
-  </div>
-    <div class="category">
-      <h3>Category 3</h3>
-      <ul>
-        <li><button onclick="showPopup('Category 1 - Item 1')">BBQ chicken</button> </li>
-        <li><button onclick="showPopup('Tonkatsu')">Tonkatsu</button> </li>
-        <li><button onclick="showPopup('Iberico')">Iberico</button> </li>
-      </ul>
-    </div>
-  </div>
+  <body>
+    <header>
+      <h1>Chef10 - Allergies</h1>
+    </header>
 
-<div id="popupModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modalMessage"></p>
-        </div>
+    <button class="switch-btn" onclick="toggleCategories()">Switch Menu</button>
+
+    <div class="panel" id="panel">
+      <!-- Categories will be inserted here by JavaScript -->
     </div>
-  <script src="main.js"></script>
-</body>
+
+    <div id="popupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalMessage"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
