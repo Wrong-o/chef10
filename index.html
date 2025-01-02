@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpost" content="width=device-width, initial-scale=1.0">
+    <title>Chef10 allergy manager</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+</html>
+<body>
+  <header>
+  <h1>Chef10 - Allergies</h1>
+  </header>
+  <div class="panel">
+    <h2>Courses</h2> 
+    <ul>
+      <li><button onclick="showPopup('BBQ chicken')">BBQ chicken</button> </li>
+      <li><button onclick="showPopup('Tonkatsu')">Tonkatsu</button> </li>
+      <li><button onclick="showPopup('Iberico')">Iberico</button> </li>
+    </ul>
+  </div>
+
+  <div class="modal" id="popupModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
